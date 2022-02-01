@@ -87,11 +87,6 @@ const Register = () => {
             placeholder="Password"
           />
         </Form.Item>
-        <Form.Item>
-          <Form.Item name="remember" valuePropName="checked" noStyle>
-            <Checkbox>Remember me</Checkbox>
-          </Form.Item>
-        </Form.Item>
         <Button
           type="primary"
           htmlType="submit"
@@ -100,7 +95,7 @@ const Register = () => {
         >
           Register
         </Button>
-        Or <Link to="/">sign in now!</Link>
+        Or <Link to="/login">sign in now!</Link>
       </Form>
     </Row>
   );

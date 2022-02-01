@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Login from './pages/Login';
 import Menus from './pages/Menus';
@@ -14,7 +14,6 @@ import PublicPostView from './pages/PublicPostView';
 
 function App() {
   const { loadUser, isAuthenticated } = useAuthContext();
-
   useEffect(() => {
     const checkUser = async () => await loadUser();
     checkUser();
