@@ -57,4 +57,4 @@ yarn-debug.log*
 yarn-error.log*
 
 #fontend
-src/frontend/node_modules/
+src/frontend/node_modules
